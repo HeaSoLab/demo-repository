@@ -39,10 +39,11 @@ labels:
 
   - name: Help Wanted
     # Provide a new name to rename an existing label
+    color: '#d13665'
     new_name: first-timers-only
 
 branches:
-  - name: master
+  - name: main
     # https://docs.github.com/en/rest/reference/repos#update-branch-protection
     # Branch Protection settings. Set to null to disable
     protection:
