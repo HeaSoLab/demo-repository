@@ -1,4 +1,4 @@
-name: Sync labels
+name: Sync Repo Labels
 on:
   # Run manually.
   workflow_dispatch:
@@ -8,7 +8,7 @@ on:
       - main
     paths:
       - .github/labels.yml
-	  
+
 jobs:
   build:
     runs-on: ubuntu-latest
