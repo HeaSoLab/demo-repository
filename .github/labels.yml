@@ -1,9 +1,62 @@
-- name: bug
+# Priority Labels.
+- name: P0
+  description: High priority - needs immediate attention
+  color: b60205  # bright red
+- name: P1
+  description: Medium priority - address after P0 items
+  color: d93f0b  # dark orange
+- name: P2
+  description: Low priority - schedule as resources allow
+  color: fbca04  # yellow
+# Issue Types.
+- name: Blocking
+  description: This issue needs to be worked on immediately
+  color: e11d21  # crimson red
+- name: Bug
   description: Something isn't working
-  color: d73a4a
-- name: documentation
+  color: d73a4a  # red-pink
+- name: Enhancement
+  description: New feature or request for improvement
+  color: a2eeef  # turquoise
+- name: Epic
+  description: Large initiative containing multiple issues
+  color: 3e4b9e  # navy blue
+- name: Design
+  description: Technical design decisions and architecture
+  color: cc33cc  # magenta
+- name: Documentation
   description: Improvements or additions to documentation
-  color: 0075ca
-- name: duplicate
-  description: This issue or pull request already exists
-  color: cfd3d7
+  color: 0075ca  # blue
+- name: Cleanup
+  description: Code cleanup, refactoring, or technical debt
+  color: c5def5  # light blue
+# Pull Request Guidelines.
+- name: PR_for_authors
+  description: The PR needs changes
+  color: 0e8a16  # green
+- name: PR_for_integrators
+  description: The PR needs to be reviewed and possibly merged
+  color: 5319e7  # deep purple
+- name: PR_for_reviewers
+  description: The PR needs to be reviewed by RPs
+  color: 1d76db  # bright blue
+# Issue Status.
+- name: Paused
+  description: An issue was started and then stopped
+  color: cccccc  # grey
+- name: To close
+  description: An issue can be potentially closed
+  color: e6e6e6  # light grey
+# Contribution Types.
+- name: good first issue
+  description: Good for newcomers
+  color: 7057ff  # purple
+- name: Outsource
+  description: Anybody can do it
+  color: 006b75  # teal
+- name: Customer
+  description: Customer related activities with billable hours
+  color: ff9001  # orange
+- name: Readings
+  description: Reading a book, article and getting familiar with code
+  color: cd9be1  # light purple
