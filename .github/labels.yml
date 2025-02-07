@@ -33,13 +33,13 @@
 # Pull Request Guidelines.
 - name: PR_for_authors
   description: The PR needs changes
-  color: 0e8a16  # green
+  color: eb35f3  # bright pink
 - name: PR_for_integrators
   description: The PR needs to be reviewed and possibly merged
-  color: 5319e7  # deep purple
+  color: fac906  # golden yellow
 - name: PR_for_reviewers
   description: The PR needs to be reviewed by RPs
-  color: 1d76db  # bright blue
+  color: 006b75  # dark green
 # Issue Status.
 - name: Paused
   description: An issue was started and then stopped
