@@ -1,0 +1,38 @@
+name: Sync Repo Settings
+
+on:
+  # Run manually.
+  workflow_dispatch:
+  
+  push:
+    branches:
+      - master
+      - HelpersTask248_Find_a_way_to_keep_GitHub_repos_in_sync
+  
+  schedule:
+    - cron: 0 0 * * *
+
+jobs:
+  repo_setup:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Sync Repo Settings
+        uses: kbrashears5/github-action-repo-settings-sync@v3.0.0
+        with:
+          REPOSITORIES: |
+            HeaSoLab/demo-repository
+          ALLOW_ISSUES: 'true'
+          ALLOW_PROJECTS: 'true'
+          ALLOW_WIKI: 'true'
+          SQUASH_MERGE: 'true'
+          MERGE_COMMIT: 'false'
+          REBASE_MERGE: 'false'
+          AUTO_MERGE: 'false'
+          DELETE_HEAD: 'true'
+          BRANCH_PROTECTION_ENABLED: 'true'
+          BRANCH_PROTECTION_NAME: 'main'
+          BRANCH_PROTECTION_REQUIRED_REVIEWERS: '0'
+          BRANCH_PROTECTION_DISMISS: 'true'
+          BRANCH_PROTECTION_CODE_OWNERS: 'true'
+          BRANCH_PROTECTION_ENFORCE_ADMINS: 'false'
+          TOKEN: ${{ secrets.ACTIONS }}
