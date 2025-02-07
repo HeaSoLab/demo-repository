@@ -20,8 +20,7 @@ jobs:
         uses: kbrashears5/github-action-repo-settings-sync@v3.0.0
         with:
           REPOSITORIES: |
-            causify-ai/sports_analytics
-            causify-ai/tutorials
+            HeaSoLab/demo-repository
           ALLOW_ISSUES: 'true'
           ALLOW_PROJECTS: 'true'
           ALLOW_WIKI: 'true'
