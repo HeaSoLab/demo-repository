@@ -6,8 +6,8 @@ on:
   
   push:
     branches:
-      - master
-      - HelpersTask248_Find_a_way_to_keep_GitHub_repos_in_sync
+      - main
+      - HelpersTask248_Find_a_way_to_keep_GitHub_repos_in_sync_2
   
   schedule:
     - cron: 0 0 * * *
