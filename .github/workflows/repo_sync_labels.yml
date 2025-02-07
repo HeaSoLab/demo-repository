@@ -7,11 +7,9 @@ on:
     branches:
       - main
       - HelpersTask248_Find_a_way_to_keep_GitHub_repos_in_sync_2
-    paths:
-      - .github/labels.yml
 
 jobs:
-  build:
+  repo_setup:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
