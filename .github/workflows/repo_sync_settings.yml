@@ -28,7 +28,7 @@ jobs:
           MERGE_COMMIT: 'false'
           REBASE_MERGE: 'false'
           AUTO_MERGE: 'false'
-          DELETE_HEAD: 'false'
+          DELETE_HEAD: 'true'
           BRANCH_PROTECTION_ENABLED: 'true'
           BRANCH_PROTECTION_NAME: 'main'
           BRANCH_PROTECTION_REQUIRED_REVIEWERS: '0'
