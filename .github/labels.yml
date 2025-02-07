@@ -5,3 +5,6 @@
 - name: P1
   description: Medium priority - address after P0 items
   color: 0052cc  # bright blue
+- name: P2
+  description: Low priority - schedule as resources allow
+  color: 2d3094  # navy blue
