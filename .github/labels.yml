@@ -1,13 +1,13 @@
 # Priority Labels.
 - name: P0
   description: High priority - needs immediate attention
-  color: b60205  # bright red
+  color: ff0000  # bright red
 - name: P1
   description: Medium priority - address after P0 items
-  color: d93f0b  # dark orange
+  color: 0052cc  # bright blue
 - name: P2
   description: Low priority - schedule as resources allow
-  color: fbca04  # yellow
+  color: 2d3094  # navy blue
 # Issue Types.
 - name: Blocking
   description: This issue needs to be worked on immediately
@@ -20,7 +20,7 @@
   color: a2eeef  # turquoise
 - name: Epic
   description: Large initiative containing multiple issues
-  color: 3e4b9e  # navy blue
+  color: 465ff9  # blue
 - name: Design
   description: Technical design decisions and architecture
   color: cc33cc  # magenta
@@ -53,7 +53,7 @@
   color: 7057ff  # purple
 - name: Outsource
   description: Anybody can do it
-  color: 006b75  # teal
+  color: 919ebe  # gray
 - name: Customer
   description: Customer related activities with billable hours
   color: ff9001  # orange
