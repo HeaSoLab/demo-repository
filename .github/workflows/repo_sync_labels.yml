@@ -18,4 +18,5 @@ jobs:
           manifest: .github/labels.yml
           repository: |
             HeaSoLab/demo-repository
+            HeaSoLab/demo2
           token: ${{ secrets.ACTIONS }}
