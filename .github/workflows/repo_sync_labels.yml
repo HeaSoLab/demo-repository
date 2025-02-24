@@ -1,0 +1,13 @@
+name: Sync Repo Labels
+on:
+  push:
+    branches:
+      - main
+  # Run manually.
+  workflow_dispatch:
+jobs:
+  repo_setup:
+    uses: HeaSoLab/template/.github/workflows/repo_sync_labels_reusable_workflow.yml@main
+    with:
+      repo-name: 'HeaSoLab/demo-repo'
+    secrets: inherit

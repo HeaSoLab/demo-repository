@@ -1,0 +1,29 @@
+name: Sync Repo Labels
+on:
+  push:
+    branches:
+      - master
+    paths:
+      - .github/labels.yml
+  # Run manually.
+  workflow_dispatch:
+
+jobs:
+  repo_setup:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Generate GitHub App token
+        uses: actions/create-github-app-token@v1
+        id: app-token
+        with:
+          app-id: ${{ vars.GH_APP_ID }}
+          private-key: ${{ secrets.GH_APP_PRIVATE_KEY }}
+          owner: ${{ github.repository_owner }}
+
+      - uses: actions/checkout@v2
+      - uses: micnncim/action-label-syncer@v1
+        with:
+          manifest: .github/labels.yml
+          repository: |
+            ${{ inputs.repo-name }}
+          token: ${{ steps.app-token.outputs.token }}
